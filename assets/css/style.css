@@ -979,9 +979,10 @@ a.btn {
 .flip-card {
   margin-left: 40px;
   background-color: transparent;
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
   perspective: 1000px;
+  float: left;
 }
 
 .flip-card-inner {
@@ -1005,9 +1006,12 @@ a.btn {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+.flip-card-back {
+  padding: 6px;
+}
 .flip-card-front img{
-  width: 200px  ;
-  height: 200px ;
+  width: 220px  ;
+  height: 220px ;
   
 }
 .flip-card-front {
@@ -1031,5 +1035,14 @@ a.btn {
     height: 800px;
     width: 100%;
     position: relative;
+  }
+  .flip-card{
+    margin-left: 0;
+    width: 420px ;
+    height: 420px;
+  }
+  .flip-card-front img{
+    width: 420px ;
+    height: 420px;
   }
 }
